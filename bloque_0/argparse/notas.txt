@@ -1,0 +1,6 @@
+ Comprar harina y huevos.
+ TODO: Limpiar la cocina.
+ REVISAR: Fecha de examen de Computación.
+ No olvidar el azúcar.
+ Error en el sistema de archivos.
+ todo: terminar el trabajo práctico.
