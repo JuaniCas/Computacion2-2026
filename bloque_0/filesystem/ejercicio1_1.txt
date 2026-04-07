@@ -1,0 +1,6 @@
+1- "ls /etc -l" ---> hay 1212 archivos
+2- "stat /etc/passwd" ---> tamaño:2897
+3- "file /dev/null" ---> character special
+4- "readlink /bin" ---> apunta a usr/bin
+5- "stat ~/.bashrc" ---> nodo-i: 5373955
+6- "stat home" ---> tiene 3 enlaces (/)(.)(..)

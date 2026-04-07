@@ -1,0 +1,26 @@
+paso 1 y 2:
+
+error= "bash: ./mi_script.sh: Permiso denegado"
+
+- me da este error porque por defecto, cuando creamos un archivo de texto, Linux no le otorga el permiso de ejecucion. Solo tiene permisos de lectura y escritura
+
+paso 3:
+
+-rw-rw-r-- 1 juanito02 juanito02 28 abr  6 21:25 mi_script.sh
+
+Significado:
+- "-": Tipo de archivo (archivo regular).
+- "rw-": El dueño puede leer y escribir, pero no ejecutar.
+- "r--": El grupo solo puede leer.
+- "r--": Otros solo pueden leer.
+
+para pensar:
+
+¿Cuál es la diferencia entre chmod +x y chmod 755?
+-"chmod +x" es una modificacion relativa. Agrega el permiso de ejecucion a los permisos que el archivo ya tenga, sin tocar el resto. "chmod 755" es una modificacion absoluta. Establece los permisos exactos ignorando lo que hubiera antes
+
+Si el archivo tiene permisos 644, ¿qué usuarios pueden leerlo? ¿Quiénes pueden escribirlo?
+-todos podrian leerlo pero solo el dueño podria escribirlo
+
+¿Por qué los directorios necesitan permiso de ejecución (x) para poder entrar en ellos?
+-Sin el permiso x, no puedes usar el comando cd para entrar en él, ni acceder a los inodos de los archivos que contiene, aunque tengas permiso de lectura (r) para ver sus nombres con ls.
