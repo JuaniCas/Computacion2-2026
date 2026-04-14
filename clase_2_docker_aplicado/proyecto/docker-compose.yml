@@ -1,0 +1,19 @@
+services:
+  web:
+    build: ./web
+    ports:
+      - "8080:5000"
+    environment:
+      - REDIS_HOST=redis
+    depends_on:
+      - redis
+
+  worker:
+    build: ./worker
+    environment:
+      - REDIS_HOST=redis
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:alpine
