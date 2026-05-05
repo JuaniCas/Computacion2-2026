@@ -1,0 +1,20 @@
+total 72
+drwxrwxr-x  2 juanito02 juanito02 4096 may  4 22:31 .
+drwxrwxr-x 10 juanito02 juanito02 4096 may  4 19:28 ..
+-rw-r--r--  1 juanito02 juanito02    0 may  4 22:31 archivo.txt
+-rw-rw-r--  1 juanito02 juanito02 1325 may  4 20:12 bidireccional.py
+-rw-rw-r--  1 juanito02 juanito02  908 may  4 22:16 dos_comandos.py
+-rw-rw-r--  1 juanito02 juanito02  941 may  4 19:29 explorar_fds.py
+-rw-r--r--  1 juanito02 juanito02 1109 may  4 22:26 listado.txt
+-rw-rw-r--  1 juanito02 juanito02  136 may  4 22:29 mayusculas.py
+-rw-rw-r--  1 juanito02 juanito02 2187 may  4 22:27 mini_shell.py
+-rw-rw-r--  1 juanito02 juanito02 1097 may  4 20:10 pipe_fork.py
+-rw-rw-r--  1 juanito02 juanito02  617 may  4 19:59 redireccion.py
+-rw-rw-r--  1 juanito02 juanito02  382 may  4 20:04 separar_salidas.py
+-rw-rw-r--  1 juanito02 juanito02   68 may  4 20:06 solo_stderr.txt
+-rw-rw-r--  1 juanito02 juanito02   73 may  4 20:05 solo_stdout.txt
+-rw-rw-r--  1 juanito02 juanito02   68 may  4 20:07 stderr.txt
+-rw-rw-r--  1 juanito02 juanito02   73 may  4 20:07 stdout.txt
+-rw-r--r--  1 juanito02 juanito02   13 may  4 22:25 test.txt
+-rw-rw-r--  1 juanito02 juanito02  141 may  4 20:07 todo.txt
+-rw-rw-r--  1 juanito02 juanito02 1629 may  4 22:18 tres_comandos.py
