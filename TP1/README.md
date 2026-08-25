@@ -160,10 +160,10 @@ Para probar que el monitor responde correctamente a las señales del sistema ope
 2. Probar el volcado a JSON: Mandá la señal SIGUSR1 para que el monitor guarde un archivo dump_<timestamp>.json con el estado actual:
     ```bash
     kill -USR1 <PID>
-3.Probar el modo verbose: Mandá la señal SIGUSR2 para alternar la cantidad de información detallada que se muestra en los paneles:
+3. Probar el modo verbose: Mandá la señal SIGUSR2 para alternar la cantidad de información detallada que se muestra en los paneles:
     ```bash
     kill -USR2 <PID>
-4.Probar el cierre limpio: Mandá la señal SIGTERM y verificá que la interfaz se cierre y los subprocesos terminen de forma prolija sin arrojar errores en la consola:
+4. Probar el cierre limpio: Mandá la señal SIGTERM y verificá que la interfaz se cierre y los subprocesos terminen de forma prolija sin arrojar errores en la consola:
     ```bash
     kill -TERM <PID>
 
@@ -191,7 +191,7 @@ Para probar que el monitor responde correctamente a las señales del sistema ope
 ![Vista sistema](vista7.png)
 
 *Menú de Ayuda (Tecla ? / h):*
-![Vista ayuda](vista?.png)
+![Vista ayuda](vistaayuda.png)
 
 *Filtro y Búsqueda (Tecla /):*
 ![Vista búsqueda](vistabusqueda.png)
