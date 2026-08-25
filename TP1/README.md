@@ -18,34 +18,34 @@ TP1/
 ├── docker-compose.yml
 ├── requirements.txt
 ├── README.md
-├── src/
-│   ├── main.py
-│   ├── config.py
-│   ├── display.py
-│   ├── procfs.py
-│   ├── recolector.py
-│   ├── shared.py
-│   ├── senales.py
-│   └── analizadores/
-│       ├── __init__.py
-│       ├── fds.py
-│       ├── memoria.py
-│       ├── resumen.py
-│       ├── scheduling.py
-│       ├── senales.py
-│       ├── sistema.py
-│       └── threads.py
-
+└── src/
+    ├── main.py
+    ├── config.py
+    ├── display.py
+    ├── procfs.py
+    ├── recolector.py
+    ├── shared.py
+    ├── senales.py
+    └── analizadores/
+        ├── __init__.py
+        ├── fds.py
+        ├── memoria.py
+        ├── resumen.py
+        ├── scheduling.py
+        ├── senales.py
+        ├── sistema.py
+        └── threads.py
+```
 ## Archivos principales
 
-- **`src/main.py`**: Punto de entrada de la aplicación. Arranca los procesos del recolector y los analizadores, y lanza la interfaz de usuario[cite: 1].
-- **`src/config.py`**: Carga la configuración de intervalos desde el archivo `config.json`[cite: 1].
-- **`src/procfs.py`**: Lee los datos directamente desde `/proc` para procesos, memoria, CPU, fds, hilos y mapas de memoria[cite: 1].
-- **`src/recolector.py`**: Se encarga de construir el *snapshot* global del sistema y de los procesos activos[cite: 1].
-- **`src/shared.py`**: Define el estado compartido entre procesos utilizando un `Manager().dict()`[cite: 1].
-- **`src/senales.py`**: Gestiona las señales del sistema operativo y los mecanismos de notificación[cite: 1].
-- **`src/display.py`**: Renderiza la TUI mediante `curses`, procesa las pulsaciones de teclas y muestra las diferentes vistas[cite: 1].
-- **`src/analizadores/`**: Contiene la lógica específica para cada una de las vistas del monitor (resumen, memoria, fds, threads, señales, scheduling y sistema)[cite: 1].
+- **`src/main.py`**: Punto de entrada de la aplicación. Arranca los procesos del recolector y los analizadores, y lanza la interfaz de usuario.
+- **`src/config.py`**: Carga la configuración de intervalos desde el archivo `config.json`.
+- **`src/procfs.py`**: Lee los datos directamente desde `/proc` para procesos, memoria, CPU, fds, hilos y mapas de memoria.
+- **`src/recolector.py`**: Se encarga de construir el *snapshot* global del sistema y de los procesos activos.
+- **`src/shared.py`**: Define el estado compartido entre procesos utilizando un `Manager().dict()`.
+- **`src/senales.py`**: Gestiona las señales del sistema operativo y los mecanismos de notificación.
+- **`src/display.py`**: Renderiza la TUI mediante `curses`, procesa las pulsaciones de teclas y muestra las diferentes vistas.
+- **`src/analizadores/`**: Contiene la lógica específica para cada una de las vistas del monitor (resumen, memoria, fds, threads, señales, scheduling y sistema).
 
 ## Diagrama de arquitectura
 
@@ -79,6 +79,7 @@ Proceso y comunicación:
  +-----------+  +-----------+ |  +-------------+  +---------+    |
                               |                                    |
                               +------------------------------------+
+```
 
 ## Decisiones de diseño (argumentadas)
 
