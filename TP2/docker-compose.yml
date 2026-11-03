@@ -1,0 +1,14 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      NUM_WORKERS: "4"
+      MAX_COLA: "100"
+      TIMEOUT_DEFAULT: "30"
+      GRACIA_APAGADO: "10"
+      DIR_ESTADO: /data
+    volumes:
+      - ./data:/data
+    stop_grace_period: 20s

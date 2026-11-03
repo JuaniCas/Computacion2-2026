@@ -1,8 +1,13 @@
 # Python
 venv/
+.venv/
 __pycache__/
 *.pyc
 .env
+data/
+
+# TP2: volcados de estado generados al apagar el servidor
+estado_*.json
 
 # IDEs
 .idea/
