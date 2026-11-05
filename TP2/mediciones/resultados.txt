@@ -1,0 +1,40 @@
+== EQUIPO ==
+12
+Python 3.14.4
+== MEDICION 1 ==
+20 descargas secuenciales: 23.43s
+20 descargas concurrentes: 1.66s
+speedup: 14.1x
+20 descargas secuenciales: 24.73s
+20 descargas concurrentes: 2.32s
+speedup: 10.6x
+20 descargas secuenciales: 24.45s
+20 descargas concurrentes: 1.91s
+speedup: 12.8x
+== MEDICION 2: SIN executor (bloqueante) ==
+duración de la tarea:  8.47s
+GET /tareas medidos:   1
+latencia media:        8470.3 ms
+peor latencia:         8470.3 ms
+== MEDICION 2: CON executor ==
+duración de la tarea:  8.84s
+GET /tareas medidos:   83
+latencia media:        5.1 ms
+peor latencia:         164.9 ms
+== MEDICION 3: esperar (50 workers) ==
+tipo=esperar
+   1 tareas ->   1.02s
+  10 tareas ->   1.04s
+  25 tareas ->   1.08s
+  50 tareas ->   1.15s
+ 100 tareas ->   2.18s
+ 200 tareas ->   4.16s
+== MEDICION 3: hashear (50 workers) ==
+tipo=hashear
+   1 tareas ->   3.09s
+   4 tareas ->   2.91s
+   8 tareas ->   3.59s
+  12 tareas ->   3.32s
+  16 tareas ->   4.76s
+  24 tareas ->   6.28s
+  32 tareas ->   8.73s
